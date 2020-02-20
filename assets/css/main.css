@@ -1,0 +1,35 @@
+html {font-family: 'Montserrat', sans-serif;/* 1 */-ms-text-size-adjust:none; /* 2 */-webkit-text-size-adjust:none; /* 2 */font-size:16px; -webkit-font-smoothing: antialiased; font-weight:400; color:#000000;margin:0 auto;}
+body,div,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+article,aside,details,time,caption,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {display: block;}
+article {overflow: hidden;padding: 30px 0;}
+body {overflow-y: hidden;}
+body::-webkit-scrollbar {width:1px; background:rgba(255,255,255,0.1);}
+body::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);}
+body::-webkit-scrollbar-thumb {background-color:#666666;}
+body::-webkit-scrollbar:horizontal {height:6px;}
+body::-webkit-scrollbar:vertical {width:1px;}
+
+.opening {display: flex;flex-direction: column;justify-content: center;align-items: center;height: 100vh;background-color:#00a650;position: fixed;z-index: 10;}
+.box-home {text-align: center;animation-duration: 5s;animation-name: slidein;color:#fff;}
+.box-home h1 {font-size: 3em;}
+.box-home img {width: 15%;height:auto;margin-bottom: 10pt;}
+.box-home p{margin: 15pt auto;font-weight: 500;font-size: 20px;line-height: 28px;padding: 0 25%;}
+.box-home a.btn{margin:0 auto; background:#939598; padding:6px 16px; text-align:center; font-size:20px; width:fit-content;text-decoration: none;cursor: pointer;}
+.box-home a.btn:hover{background:#bbbcc8;}
+
+@keyframes slidein {
+    from {margin-bottom: -100%;}
+    to {margin-bottom: 0%;}
+}
+
+.container {margin: 0 auto;max-width: 1200px;padding: 0 15px;display: block;min-height: 20px;position: relative;}
+.container.small {max-width: 1020px;}
+.column-in {margin: 50px auto;}
+.box-column .column-in h3 {color: #f7931e;margin-left: 50px;margin-top: 20px;}
+.box-column .column-in h1 {margin-left: 50px;font-size: 50px;font-family: MetaSerifLf-Book;}
+article p {font-size: 20px;line-height: 28px;color: #666666;margin: 0 50px 0px 50px;}
+.centering {display: flex !important;align-items: center !important;justify-content: center !important;}
+.margin-top-sm {margin-top: 15px !important;}
+.centering a:visited {color: white;background-color: #999;}
+.centering a {color: white;background-color: #f7931e;text-decoration: none;padding-right: 20px;padding-left: 20px;padding-top: 10px;padding-bottom: 10px;border-radius: 5px;box-shadow: 3px 5px #888888;}
+.centering a:hover {background-color: #c1151b;}
